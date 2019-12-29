@@ -19,7 +19,7 @@
   <body class="d-flex flex-column">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top bg-hotel">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">My Hotel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,21 +42,25 @@
       </div>
     </nav>
 
-    <div class="container-fluid mt-4 p-2" id="main">
-      <div class="container text-center">
-        <img src="img/logo.png" width="300px">
-      </div>
-      <div class="input-group input-group-lg mx-auto w-75" style="max-width: 900px;">
-        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Exemple: Blida, Blida">
-        <div class="input-group-append">
-          <span class="input-group-text fas fa-search" id="inputGroup-sizing-lg"></span>
+    <div class="d-flex h-100">
+        <div class="justify-content-center align-self-center w-100">
+          <div class="container-fluid pb-4" id="main">
+            <div class="container text-center">
+              <img src="img/logo.png" class="img-fluid">
+            </div>
+            <div class="input-group input-group-lg mx-auto w-75" style="max-width: 900px;">
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Exemple: Blida, Blida">
+              <div class="input-group-append">
+                <span class="input-group-text fas fa-search" id="inputGroup-sizing-lg"></span>
+              </div>
+            </div>
+            <div class="text-center my-3">
+              <button class="btn btn-primary btn-lg px-4">Search
+                <span class="fas fa-search"></span>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="text-center my-3">
-        <button class="btn btn-primary btn-lg px-4">Search
-          <span class="fas fa-search"></span>
-        </button>
-      </div>
     </div>
 
     <div class="container" id="page-content">
@@ -64,9 +68,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-4 shadow bg-hotel" id="sticky-footer">
+    <footer class="py-4 shadow bg-dark" id="sticky-footer">
       <div class="container">
-        <p class="m-0 text-center">Copyright &copy; Something 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Something 2019</p>
       </div>
     </footer>
 
